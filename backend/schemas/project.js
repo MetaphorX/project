@@ -25,6 +25,11 @@ export default{
             type: "string"
         },
         {
+            name: "abstract",
+            title: "Abstract",
+            type: "string"
+        },
+        {
             name: "supervisedBy",
             title: "Supervised By",
             type: "string"
