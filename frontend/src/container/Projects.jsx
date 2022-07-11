@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Routes, Route} from 'react-router-dom'
-import {Navbar, Feed, ProjectDetail, Search} from '../components'
+import {Navbar, Feed, ProjectDetail, Search, Department} from '../components'
 
 const Projects = () => {
 
@@ -14,7 +14,7 @@ const Projects = () => {
       <div className='h-full'>
         <Routes>
           <Route path="/" element={<Feed />} />
-          <Route path="/department/:departmentId" element={<Feed />} />
+          <Route path="/department/:departmentId" element={<Department />} />
           <Route path="/project-detail/:projectId" element={<ProjectDetail />} />
           <Route path="/search" element={<Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />} />
         </Routes>

@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import {IoMdAdd, IoMdSearch } from 'react-icons/io'
+import './style.css'
 
 const Navbar = ({searchTerm, setSearchTerm}) => {
  
@@ -20,7 +21,9 @@ const Navbar = ({searchTerm, setSearchTerm}) => {
           className="p-2 w-full bg-white outline-none"
         />
       </div>
-      
+      <a href="#" class="hidden md:block p-3 px-6 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"> 
+        Login
+       </a>
     </div>
   )
 }

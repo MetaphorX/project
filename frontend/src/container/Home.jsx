@@ -30,9 +30,9 @@ const Home = () => {
           <img src={logo} alt="logo" className='w-28'/>
         </Link>
         {/* Login or Sign Up */}
-        <Link to="/login">
-          <p>Login or Signup</p>
-        </Link>
+        <a href="#" class="p-3 px-6 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"> 
+        Login 
+       </a>
         </div>
         {toggleSidebar && (
         <div className='fixed w-4/5 bg-white h-screen overflow-y-auto shadow-md z-10 animate-slide-in'>
